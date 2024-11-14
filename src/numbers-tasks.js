@@ -307,8 +307,8 @@ function getSumOfDigits(num) {
  *   16  => true
  *   15  => false
  */
-function isPowerOfTwo(/* num */) {
-  throw new Error('Not implemented');
+function isPowerOfTwo(num) {
+  return num < 1000 ? 2 ** Math.log2(num) === num : false;
 }
 
 /**
